@@ -1,0 +1,48 @@
+:root {
+  --background: #383738;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-color: var(--background);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 800px;
+}
+
+.card {
+  position: relative;
+  left: 0px;
+  width: 160px;
+  height: 640px;
+  overflow: hidden;
+  background-color: var(--background);
+  transition: 0.4s ease-in-out;
+  flex: 0.25;
+}
+
+.card img {
+  height: 640px;
+}
+
+img {
+  border-radius: 5%;
+}
+
+.card:hover {
+  flex: 2;
+  font-weight: bold;
+  cursor: pointer;
+}
