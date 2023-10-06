@@ -37,10 +37,6 @@
   height: 640px;
 }
 
-img {
-  border-radius: 5%;
-}
-
 .card:hover {
   flex: 2;
   font-weight: bold;
